@@ -1,0 +1,9 @@
+createDataSet  O(m)
+destroyDataSet O(1)
+searchID       O(logn)
+insert         O(n)
+del            O(n)
+
+For application 2 I decided to use a sorted array because this would optimize the Big-O run time for the most frequent operation (searchID).
+I sorted the array by ID so that I could search by id with O(logn) run time.
+An unsorted array would have a searchID efficiency of O(n).
