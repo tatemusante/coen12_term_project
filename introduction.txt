@@ -1,0 +1,4 @@
+Consider a college holding records about its students, where each record contains two integer fields: ID and Age.
+Given different application scenarios below, for each application, please (1) identify the most appropriate data structures so that the Big-O run time for frequent operations is optimized, (2) provide the implementation code, and (3) analyze the worst-case Big-O run time for each operation.
+Your possible data structure choices mainly include struct, array, linked list, and hash table.
+Please note that the college assigns a global unique ID to a student when he/she first enrolls and the ID will never be recycled for other students (Hints: No need to check the uniqueness of a record for insertion).
