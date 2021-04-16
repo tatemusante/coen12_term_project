@@ -1,0 +1,17 @@
+createDataSet  O(1)
+destroyDataSet O(n)
+searchAge      O(n)
+searchID       O(n) (Expected O(1))
+insert         O(1)
+del            O(n) (Expected O(1))
+maxAgeGap      O(1)
+
+For application 3 I decided to use a hash table that resolved collisions with unsorted doubly linked lists.
+I also kept pointers to students with the highest and lowest ages.
+By resolving collisions with unsorted doubly linked lists, the Big-O run time for insertion (one of the most frequently used functions for this application) was O(1).
+I inserted each new student at the beginning of the linked list that they belonged to according to the hash function.
+The deletion function had an expected Big-O run time of O(1) because it only had to search within one linked list.
+The worst case Big-O run time for deletion was O(n).
+If every student's id had the same hash value, and the one to be deleted was inserted first. It would have to search through every student.
+By using pointers to keep track of which students were the oldest and youngest, I reduced the Big-O run time of maxAgeGap to O(1).
+searchID's Big-O run time was able to be the same as deletion, even though searchID was not a frequent function.
